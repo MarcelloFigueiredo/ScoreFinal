@@ -4,4 +4,4 @@ Este é um projeto de uma  *Calculadora* com finalidade de informar a porcentage
 
 ## 🌐 Acesse Aqui
 
-Você pode acessar a calculadora através deste [link](https://marcellofigueiredo.github.io/Score-Final/). Basta abrir no seu navegador e começar a usar!
+Você pode acessar a calculadora através deste [link](https://marcellofigueiredo.github.io/scorefinal/). Basta abrir no seu navegador e começar a usar!
