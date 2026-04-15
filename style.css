@@ -1,0 +1,165 @@
+/* Fonte e cores base */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* Container central */
+.container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Título */
+h2 {
+  color: #00AEEF;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+input[type=number],
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background: #f9f9f9;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+input[type=number]:focus,
+input[type=text]:focus {
+  border-color: #00AEEF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,174,239,0.3);
+}
+
+/* Botão Calcular */
+.botoes-superiores {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.botoes-superiores button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #00AEEF;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.botoes-superiores button:hover {
+  background: #0095C9;
+}
+
+/* Barra de progresso */
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #00AEEF; /* cor padrão; o JS atualiza conforme categoria */
+  border-radius: 8px;
+  transition: width 0.8s ease-in-out, background 0.5s ease;
+}
+
+/* Resultado com GIF */
+.resultado {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+/* Cores de fundo por categoria */
+.resultado.ouro { background: #fff8dc; }   /* fundo dourado suave */
+.resultado.prata { background: #f0f0f0; }  /* fundo prata suave */
+.resultado.bronze { background: #f9f0e6; } /* fundo bronze suave */
+
+.resultado.show {
+  opacity: 1;
+}
+
+.resultado img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.resultado img:hover {
+  transform: scale(1.05);
+}
+
+/* Botões de ação (aparecem após cálculo) */
+.botoes {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.botoes button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #00AEEF;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.botoes button:hover {
+  background: #0095C9;
+}
+
+/* Placeholder estilo */
+input::placeholder {
+  color: #aaa;
+}
