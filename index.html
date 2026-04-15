@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Score Final</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Score Final</h2>
+
+  <!-- Campo Nome do Analista -->
+  <div class="input-group">
+    <label for="nome">Nome do Analista:</label>
+    <input type="text" id="nome" placeholder="Digite o nome do analista">
+  </div>
+
+  <!-- Pontuação das 13 avaliações de teste -->
+  <div class="input-group">
+    <label for="teste">
+      Pontuação total das 13 avaliações de teste (0 a 135):
+    </label>
+    <input type="number" id="teste" min="0" max="135" value="0">
+  </div>
+
+  <!-- Pontuação da avaliação final -->
+  <div class="input-group">
+    <label for="final">
+      Pontuação da avaliação final (0 a 50):
+    </label>
+    <input type="number" id="final" min="0" max="50" value="0">
+  </div>
+
+  <!-- Pontuação do Kahoot -->
+  <div class="input-group">
+    <label for="kahoot">
+      Pontuação do Kahoot (0 a 5):
+    </label>
+    <input type="number" id="kahoot" min="0" max="5" value="0">
+  </div>
+
+  <!-- Informação extra (opcional, ajuda o usuário) -->
+  <p style="font-size: 13px; color: #666;">
+    Pontuação máxima total: <strong>200 pontos</strong>
+  </p>
+
+  <!-- Botão de calcular -->
+  <div class="botoes-superiores">
+    <button id="calcularBtn">Calcular Categoria</button>
+  </div>
+
+  <!-- Barra de progresso -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Resultado -->
+  <div id="resultado" class="resultado"></div>
+
+  <!-- Botões de ação aparecem abaixo do GIF -->
+  <div class="botoes" id="botoesAcoes" style="display:none;">
+    <button id="salvarBtn">Salvar Resultado</button>
+    <button id="refazerBtn">Refazer Cálculo</button>
+  </div>
+</div>
+
+<!-- Biblioteca para gerar PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
